@@ -280,3 +280,41 @@ docker run --name gym-management-container -d gymsoftwareimage
 docker ps -a
 docker start e830aebece4b
 docker ps -a
+clear
+docker ps -a
+docker logs e830aebece4b
+docker run --name gym-management-container -e JAVA_OPTS="-Djava.awt.headless=true" -d gymsoftwareimage
+docker rm e830aebece4b
+docker ps -a
+docker run --name gym-management-container -e JAVA_OPTS="-Djava.awt.headless=true" -d gymsoftwareimage
+docker ps -a
+docker start e5f643166142
+docker ps -a
+ls
+mkdir project2
+ls
+cd project2/
+ls
+nano gym-software-java
+ls
+cat gym-software-java 
+clear
+ls
+clear
+cd
+ls
+git init
+git add .
+ls
+cd project2/
+git add .
+git commit -m "Initial commit"
+git push origin main
+git config user.email "venkateshkalla1111@gmail.com"
+git config user.name "venkateshkalla14"
+git commit -m "Initial commit"
+git push origin main
+git branch
+git push origin master
+git remote add origin https://github.com/venkateshkalla14/project2
+git push -u origin master
